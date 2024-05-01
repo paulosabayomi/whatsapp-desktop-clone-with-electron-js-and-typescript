@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "user_id": 3,
+        "status": [
+            {"text": "Good morning"},
+            {"text": "Today is beautiful"}
+        ]
+    },
+    {
+        "id": 2,
+        "user_id": 5,
+        "status": [
+            {"text": "I visited Japan last week"},
+            {"text": "Japan is an amazing country"}
+        ]
+    }
+]

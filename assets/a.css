@@ -1,0 +1,52 @@
+@font-face {
+  font-family: HVRegular;
+  src: url(../../assets/font/Helvetica.ttf);
+}
+@font-face {
+  font-family: HVLight;
+  src: url(../../assets/font/helvetica-light.ttf);
+}
+@font-face {
+  font-family: HVBold;
+  src: url(../../assets/font/Helvetica-Bold.ttf);
+}
+
+:root {
+  --sidebar-bg: #f1f1f1;
+  --icon-color: #656565;
+  --list-container-bg: #ffffff;
+  --list-container-hightlight-bg: #f0f0f0;
+  --item-hightlight-bg: #dedede;
+  --border-color: #f2f2f2;
+  --chat-page-bg: #f7f3ef;
+  --chat-incoming-bg: #ffffff;
+  --sent-chat-bg: #e1ffd4;
+  --chat-bubble-text-color: #222720;
+  --chat-encr-msg-bg: #fff4ba;
+  --chat-encr-text-color: #4a494b;
+  --text-color: #808080;
+  --text-blue: #007aff;
+  --inverse-black: #ebebf5;
+  --app-light-green: #069e7c;
+  --settings-page-bg: #ececec;
+}
+
+html.dark {
+  --sidebar-bg: #282829;
+  --icon-color: #b1b1b2;
+  --list-container-bg: #1e1e1e;
+  --list-container-hightlight-bg: #303030;
+  --item-hightlight-bg: #3e3e3f;
+  --border-color: #292929;
+  --chat-page-bg: #464646;
+  --chat-incoming-bg: #363638;
+  --sent-chat-bg: #005146;
+  --chat-bubble-text-color: #dbe4e3;
+  --chat-encr-msg-bg: #141414;
+  --chat-encr-text-color: #ffe560;
+  --text-color: #9a9a9a;
+  --text-blue: #47b0fe;
+  --inverse-black: #4a4a4f;
+  --settings-page-bg: #1e1e1e;
+
+}

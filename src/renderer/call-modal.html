@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+        --sidebar-bg: #f1f1f1;
+        --side-bar-border-color: #dcdcdc;
+        --icon-color: #656565;
+        --list-container-bg: #ffffff;
+        --list-container-hightlight-bg: #f0f0f0;
+        --item-hightlight-bg: #dedede;
+        --border-color: #dadada;
+        --input-border-color: #f2f2f2;
+        --chat-page-bg: #eae6df;
+        --chat-incoming-bg: #ffffff;
+        --sent-chat-bg: #e1ffd4;
+        --chat-bubble-text-color: #222720;
+        --chat-encr-msg-bg: #fff4ba;
+        --chat-encr-text-color: #4a494b;
+        --text-color: #808080;
+        --text-blue: #007aff;
+        --inverse-black: #ebebf5;
+        --app-light-green: #069e7c;
+        --settings-page-bg: #ececec;
+        --inverse-white: #000000;
+        --input-bg: #ffffff;
+        --list-item-bg: #ffffff;
+        }
+
+        html.dark {
+        --sidebar-bg: #282829;
+        --side-bar-border-color: #333335;
+        --icon-color: #b1b1b2;
+        --list-container-bg: #1e1e1e;
+        --list-container-hightlight-bg: #303030;
+        --item-hightlight-bg: #3e3e3f;
+        --border-color: #292929;
+        --input-border-color: #292929;
+        --chat-page-bg: #464646;
+        --chat-incoming-bg: #363638;
+        --sent-chat-bg: #005146;
+        --chat-bubble-text-color: #dbe4e3;
+        --chat-encr-msg-bg: #141414;
+        --chat-encr-text-color: #ffe560;
+        --text-color: #9a9a9a;
+        --text-blue: #47b0fe;
+        --inverse-black: white;
+        --inverse-white: #ffffff;
+        --settings-page-bg: #1e1e1e;
+        --input-bg: #282829;
+        --list-item-bg: #323232;
+
+        }
+        body {
+            font-family: Helvetica;
+            padding: 0px 10px;
+            background-color: var(--list-container-bg);
+        }
+        h5 {
+            text-align: center;
+            line-height: 12px;
+            margin-top: 0px;
+            color: var(--inverse-black);
+        }
+
+        .list-cont {
+            border-radius: 6px;
+            background-color: var(--list-item-bg);
+        }
+
+        .list-cont .list-item {
+            padding: 12px;
+            font-size: 80%;
+            color: var(--inverse-black);
+        }
+
+        .list-cont .list-item:not(.list-item:last-child) {
+            border-bottom: .5px solid var(--border-color);
+        }
+
+        .close-button {
+            position: absolute;
+            top: 4px;
+            right: 10px;
+            background-color: rgb(40, 39, 39);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h5>
+        Create Call Link
+    </h5>
+
+    <div class="close-button">
+        <svg height="30" viewBox="0 0 24 24" style="transform: rotate(45deg);" width="24" xmlns="http://www.w3.org/2000/svg"><path fill="lightgray" d="m13 12h5.5c.2761424 0 .5.2238576.5.5s-.2238576.5-.5.5h-5.5v5.5c0 .2761424-.2238576.5-.5.5s-.5-.2238576-.5-.5v-5.5h-5.5c-.27614237 0-.5-.2238576-.5-.5s.22385763-.5.5-.5h5.5v-5.5c0-.27614237.2238576-.5.5-.5s.5.22385763.5.5z"/></svg>
+    </div>
+
+    <div class="list-cont">
+        <div class="list-item">
+            Send Link via WhatsApp
+        </div>
+        <div class="list-item">
+            Copy Link
+        </div>
+        <div class="list-item">
+            Share Link
+        </div>
+        <div class="list-item">
+            Add to Calendar
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.close-button').onclick = () => window.close();
+    </script>
+</body>
+</html>
